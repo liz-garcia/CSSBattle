@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating fixed elements</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: #631E1D;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: fit-content;
+            border: greenyellow solid 2px;
+        }
+
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        main {
+            border: 5px solid black;
+            position: relative;
+            width: 50vh;
+            height: 50vh;
+        }
+
+        div {
+            width: 4vh;
+            height: 50vh;
+            background: #F16B4A;
+            position: absolute;
+            bottom: 4vh;
+        }
+
+        #one {
+            transform-origin: left bottom;
+            bottom: 12vh;
+            left: -0.5vh;
+            transform: rotate(90deg);
+        }
+
+        #two {
+            transform-origin: left bottom;
+            left: 5%;
+            transform: rotate(30deg);
+        }
+
+        #three {
+            transform-origin: right bottom;
+            right: 5%;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+
+<body class="centered">
+    <main>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </main>
+</body>
+
+</html>
+
+<!--
+    My solution to the challenge:
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+
+    <style>
+    * {
+        margin: 0px;
+        background-color: #631E1D;
+    }
+    
+    div {
+        width: 30px;
+        height: 250px;
+        background: #F16B4A;
+        transform-origin: left bottom;
+        position: fixed;
+    }
+
+    #one {
+        bottom: 95;
+        left: 75;
+        rotate: 90deg;
+    }
+
+    #two {
+        left: 85;
+        rotate: 30deg;
+    }
+
+    #three {
+        top: 15;
+        left: 290;
+        rotate: -30deg;
+    }
+    </style>
+-->
