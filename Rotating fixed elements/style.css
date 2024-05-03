@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #631E1D;
+    box-sizing: border-box;
+}
+
+body {
+    height: fit-content;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main {
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+}
+
+div {
+    width: 4vh;
+    height: 50vh;
+    background: #F16B4A;
+    position: absolute;
+    bottom: 4vh;
+}
+
+#one {
+    transform-origin: left bottom;
+    bottom: 12vh;
+    left: -0.5vh;
+    transform: rotate(90deg);
+}
+
+#two {
+    transform-origin: left bottom;
+    left: 5%;
+    transform: rotate(30deg);
+}
+
+#three {
+    transform-origin: right bottom;
+    right: 5%;
+    transform: rotate(-30deg);
+}
