@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Centered white-circles blue-squares</title>
+</head>
+
+<body>
+    <div id="a" class="center white">
+        <div id="b">
+            <div id="c" class="white">
+                <div id="d"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- My solution:
+
+<div id="a" class="center white">
+    <div id="b">
+      <div id="c" class="white">
+        <div id="d"></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    * {
+      background: #4F77FF;
+    }
+    .white {
+      background: #FFFFFF;
+      border-radius: 100vh;
+    }
+    .center, .center * {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      aspect-ratio: 1 / 1;
+    }
+    #a, #b {
+      width: 70%;
+    }
+    #c {
+      width: 60%;
+    }
+    #d {
+      width: 33%;
+    }
+  </style> -->

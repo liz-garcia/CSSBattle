@@ -1,0 +1,33 @@
+* {
+    background: #4F77FF;
+}
+
+.white {
+    background: #FFFFFF;
+    border-radius: 100vh;
+}
+
+.center,
+.center * {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1 / 1;
+}
+
+#a {
+    width: 95vh;
+}
+
+#b {
+    width: 71%;
+}
+
+#c {
+    width: 60%;
+}
+
+#d {
+    width: 33%;
+}
